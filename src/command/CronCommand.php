@@ -1,8 +1,8 @@
 <?php
 
-namespace Creatcode\command;
+namespace Creatcode\Crontask\command;
 
-use Creatcode\CrontabTask;
+use Creatcode\Crontask\HttpCrontab;
 use think\console\Command;
 use think\console\Input;
 use think\console\input\Argument;
@@ -38,7 +38,7 @@ class CronCommand extends Command
             $url = config('crontask.base_url');
         }
 
-        $server   = new CrontabTask($url);
+        $server   = new HttpCrontab($url);
         $database = config('database');
         $server->setName(config('crontask.name') ?: 'Crontab Server')
             ->setDbConfig($database ?? []);

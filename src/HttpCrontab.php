@@ -1,8 +1,8 @@
 <?php
 
-namespace Creatcode;
+namespace Creatcode\Crontask;
 
-use Creatcode\exception\HttpException;
+use Creatcode\Crontask\exception\HttpException;
 use think\App;
 use think\Console;
 use think\Db;
@@ -15,9 +15,9 @@ use Workerman\Worker;
 /**
  * 注意：定时器开始、暂停、重起 都是在下一分钟开始执行
  * Class CrontabService
- * @package Creatcode
+ * @package Creatcode\Crontask
  */
-class CrontabTask
+class HttpCrontab
 {
     const FORBIDDEN_STATUS = '0';
 

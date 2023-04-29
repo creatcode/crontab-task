@@ -1,6 +1,6 @@
 <?php
 
-namespace Creatcode\command;
+namespace Creatcode\Crontask\command;
 
 use think\App;
 use think\console\command\Make;

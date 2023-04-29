@@ -1,9 +1,9 @@
 <?php
 
-namespace Creatcode;
+namespace Creatcode\Crontask;
 
-use Creatcode\exception\RouteMethodNotAllowException;
-use Creatcode\exception\RouteNotFoundException;
+use Creatcode\Crontask\exception\RouteMethodNotAllowException;
+use Creatcode\Crontask\exception\RouteNotFoundException;
 use FastRoute\Dispatcher;
 use FastRoute\RouteCollector;
 

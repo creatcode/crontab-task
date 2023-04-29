@@ -1,6 +1,6 @@
 <?php
 
-namespace Creatcode\exception;
+namespace Creatcode\Crontask\exception;
 
 class RouteMethodNotAllowException extends HttpException
 {

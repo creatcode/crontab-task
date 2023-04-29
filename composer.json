@@ -11,7 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Creatcode\\": "src"
+            "Creatcode\\Crontask\\": "src"
         },
         "files": [
             "src/helper.php"
@@ -30,7 +30,7 @@
     },
     "extra": {
         "think-config": {
-            "crontask": "src/config.php"
+            "crontabtask": "src/config.php"
         }
     }
 }

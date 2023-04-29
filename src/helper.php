@@ -2,6 +2,6 @@
 
 // 注册命令
 \think\Console::addDefaultCommands([
-    "Creatcode\\command\\CronCommand",
-    "Creatcode\\command\\MakeCommand"
+    "Creatcode\\Crontask\\command\\CronCommand",
+    "Creatcode\\Crontask\\command\\MakeCommand"
 ]);
