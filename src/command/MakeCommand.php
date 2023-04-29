@@ -23,7 +23,7 @@ class MakeCommand extends Make
         $commandName = $this->input->getArgument('commandName') ?: strtolower(basename($name));
         $namespace   = trim(implode('\\', array_slice(explode('\\', $name), 0, -1)), '\\');
 
-        $class = ucfirst(str_replace($namespace . '\\', '', $name));
+        $class = str_replace($namespace . '\\', '', $name);
         $stub  = file_get_contents($this->getStub());
 
         return str_replace(['{%commandName%}', '{%className%}', '{%namespace%}', '{%app_namespace%}'], [
@@ -38,6 +38,11 @@ class MakeCommand extends Make
     {
         return __DIR__ . DIRECTORY_SEPARATOR . 'stubs' . DIRECTORY_SEPARATOR . 'command.stub';
     }
+
+    // protected function getClassName($name)
+    // {
+    //     return parent::getClassName(ucfirst($name));
+    // }
 
     protected function getNamespace($app, $module)
     {
