@@ -1,0 +1,35 @@
+{
+    "name": "creatcode/crontab-task",
+    "description": "适用于tp5.0的秒级定时任务",
+    "type": "think-extend",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "creatcode",
+            "email": "872864670@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Creatcode\\Crontask\\": "src"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "suggest": {},
+    "require": {
+        "php": ">=7.2.5",
+        "ext-json": "*",
+        "workerman/workerman": "^4.0",
+        "workerman/crontab": "^1.0"
+    },
+    "require-dev": {
+        "topthink/framework": "~5.0.0"
+    },
+    "extra": {
+        "think-config": {
+            "crontabtask": "src/config.php"
+        }
+    }
+}
