@@ -60,23 +60,44 @@ halt($client);
 
 
 - 任务列表     index
-
-  参数：[必选]title，type，rule，target，?parameter
-  
-        [可选]remark，sort，status，singleton
-
-
+```
+参数：page,limit,?where
+```
 - 添加任务     add
+```
+参数：[必选] title，type，rule，target，?parameter
+      [可选] remark，sort，status，singleton
+```
 - 修改任务     edit
+```
+参数：id, param(要更新的数据数组)
+```
 - 任务详情     read
-- 修改定时器   modify
+```
+参数：id
+```
+- 修改定时器状态   modify
+```
+参数：id，status
+```
 - 重启任务     reload
+```
+参数：id
+```
 - 删除任务     delete
+```
+参数：id
+```
 - 日志列表     flow
+```
+参数：page,limit,?where
+```
 - 定时器池     pool
 - 心跳         ping
 - 执行一次     runone
-
+```
+参数：id
+```
 
 ## 附录
 
